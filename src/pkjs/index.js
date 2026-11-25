@@ -10,7 +10,7 @@
   var PAGE_SIZE = 4;
   // REQUIRED before using the phone's Settings/gear icon:
   // Deploy viewer/ on GitHub Pages, and set this to its public HTTPS URL.
-  var CONFIG_URL = 'https://YOUR-USERNAME.github.io/pebble-voice-notes/';
+  var CONFIG_URL = 'https://antcruzer.github.io/pebble-windex-app/viewer/';
 
   // PebbleJS C and JS keys are defined by their order in package.json.
   var NUMERIC_KEYS = { NoteId: 0, NoteText: 1 };
@@ -83,14 +83,8 @@
   }
 
   function openViewer(requestedOffset) {
-    if (CONFIG_URL.indexOf('YOUR-USERNAME') !== -1) {
-      // Viewing requires deployment of static HTML; saving does not.
-      console.log('Configure CONFIG_URL before opening Notes viewer');
-      Pebble.openURL('https://developer.repebble.com/guides/user-interfaces/app-configuration-static/');
-      return;
-    }
-
     var notes;
+
     var viewerError = null;
     try {
       notes = readNotes();

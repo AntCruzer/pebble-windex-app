@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {},
   "pebble": {
-    "displayName": "pebble-windex-app",
+    "displayName": "W-INDEX",
     "uuid": "e49f014b-486e-4356-946b-9b767b4a04d1",
     "sdkVersion": "3",
     "enableMultiJS": true,
@@ -16,6 +16,7 @@
     "watchapp": {
       "watchface": false
     },
+    "capabilities": ["configurable"],
     "messageKeys": [
       "NoteId",
       "NoteText",

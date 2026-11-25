@@ -198,7 +198,9 @@ static void prv_start_dictation(void *context) {
   s_note_id = 0;
   s_state = STATE_DICTATING;
   prv_show("LISTENING...", "Speak your short note");
-  if (!dictation_session_start(s_dictation_session)) {
+  // Pebble's API returns a DictationSessionStatus, not a boolean.
+  // DictationSessionStatusSuccess is zero, so do not negate the result.
+  if (dictation_session_start(s_dictation_session) != DictationSessionStatusSuccess) {
     s_state = STATE_DICTATION_ERROR;
     prv_show("VOICE UNAVAILABLE", "Select: try again\nBack: exit");
   }
