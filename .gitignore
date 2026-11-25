@@ -1,0 +1,9 @@
+build/
+.lock-waf_*
+.waf-*
+node_modules/
+*.log
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/

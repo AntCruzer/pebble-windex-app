@@ -1,0 +1,30 @@
+{
+  "name": "pebble-windex-app",
+  "author": "Anton dela Cruz",
+  "version": "1.0.0",
+  "keywords": ["pebble-app", "voice-notes", "dictation"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "pebble-windex-app",
+    "uuid": "e49f014b-486e-4356-946b-9b767b4a04d1",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "NoteId",
+      "NoteText",
+      "AckId",
+      "AckStatus",
+      "PhoneReady"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}

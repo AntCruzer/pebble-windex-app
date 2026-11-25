@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Pebble Voice Notes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <p class="eyebrow">PEBBLE TIME 2</p>
+      <h1>Voice Notes</h1>
+      <p id="count" class="description">Loading notes...</p>
+    </header>
+    <section id="notes" class="notes" aria-live="polite"></section>
+    <div class="pagination">
+      <button id="newer" type="button">Newer</button>
+      <span id="page" aria-live="polite"></span>
+      <button id="older" type="button">Older</button>
+    </div>
+    <button id="done" type="button" class="done">Done</button>
+    <p class="privacy">Notes stay in the Pebble phone app's local storage. This page receives only the notes on the displayed page. Do not add analytics to this page.</p>
+  </main>
+</body>
+</html>
